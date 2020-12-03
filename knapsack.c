@@ -27,7 +27,7 @@ void knapsack_solve(int total, item *items, int size) {
 		}
 		
 		int flag = 0;
-		for (int k = 1; k < i >> 1; ++k) {
+		for (int k = 1; k <= i >> 1; ++k) {
 			int current = w[k]->value + w[i - k]->value;
 			if (current > best) {
 				if (w[i] == NULL) {

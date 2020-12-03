@@ -13,10 +13,10 @@ void list_list_add(list *l, node *n) {
 	if (l->first == NULL) {
 		l->first = n;
 		l->last = n;
-		l->value = n->data->value;
+		l->value = n->value;
 		return;
 	}
-	l->value += n->data->value;
+	l->value += n->value;
 	l->last->next = n;
 	l->last = n;
 	return;
