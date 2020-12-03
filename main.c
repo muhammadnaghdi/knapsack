@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
 	io_get(items, argc, argv);
 	//io_array_put(items, default_size);
 	
-	knapsack_solve(atoi(argv[1]), items, default_size);
+	knapsack_solve(12, items, default_size);
 	puts("");
 	return 0;
 }

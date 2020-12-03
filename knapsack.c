@@ -35,6 +35,7 @@ void knapsack_solve(int total, item *items, int size) {
 					list_super_list_init(w[i]);
 				}
 				list_super_list_set(w[i], w[k], w[i-k]);
+				best = current;
 				flag = 1;
 			}
 		}
